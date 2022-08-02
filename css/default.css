@@ -6,17 +6,23 @@ html, body{
     background-size: cover;
 }
 
-#top{
+.content{
+    height: 100%;
+}
+
+.top{
     height: 100px;
 }
 
-#middle{
+.middle{
     height: 500px;
+}
+
+.bottom{
+    height: 100px;
 }
 
 .menu{
     background-color: rgba(255, 255, 255, 0.5);
-    height: 100%;
-    width: 100%;
     border-radius: 30px;
 }
