@@ -1,6 +1,6 @@
 html, body{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 #nav{
@@ -10,10 +10,10 @@ html, body{
     width: 100%;
 }
 
-/* cover */
+/* Cover */
 
 header{
-    height: 100%;
+    height: auto;
 }
 
 #cover{
@@ -27,8 +27,7 @@ header{
     background-position:center center;
 }
 
-/* menu */
-
+/* Menu */
 #menu{
     display: flex;
     height: auto;
@@ -38,6 +37,7 @@ header{
     padding: 1rem;
 }
 
+/* Introduction */
 #cv-1{
     width: 60%;
     height: auto;
@@ -48,7 +48,7 @@ header{
     margin-top: 10px;
 }
 
-#about > h4, #skill > h4, #achievement > h4, #others > h4{
+#about > h4, #skill > h4, #award > h4, #projects > h4{
     font-weight: bolder;
 }
 
@@ -57,11 +57,38 @@ header{
     width: 45%;
 }
 
-.award img:hover{
-    cursor: pointer;
-
+.award img{
+    -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
 }
 
+.award img:hover{
+    cursor: pointer;
+    box-shadow: rgba(190,190,190) 3px 3px 20px 0px;
+    transform: translate(0,-5px);
+}
+
+.award h6{
+    color: rgba(210,210,210);
+}
+
+.show{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.show-page{
+    background-color: white;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+/* Profile */
 #cv-2{
     width: 40%;
     height: auto;
@@ -80,99 +107,76 @@ header{
     max-height: 100%;   
 }
 
-/* #website{
+/* Projects & Activity */
+section{
+    height: 100%;
+    background-color: rgba(248,229,170);
+}
+
+.topic{
+    padding: 2rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: fit-content;
-    text-decoration: none;
-    color: black;
-    justify-content: center;
 }
 
-#website a{
-    width: 100%;
-}
-
-#website div:hover{
-    background-color: antiquewhite;
-}
-
-#website img{
-    padding: 10px;
-    height: 50px;
-    max-width: 100%;
-    display: block;
+.title{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
     margin-left: auto;
     margin-right: auto;
-} */
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px; 
+}
 
+#picture{
+    background-color: rgba(248,229,170);
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center center;
+}
+
+/* Footer */
+footer{
+    height: 200px;
+    background-color: rgba(209, 105, 0, 0.6);
+}
+
+
+/* RWD */
 @media screen and (max-width: 992px){
     #cv-1{
         width: 100%;
-        height: 50%;
     }
 
     #cv-2{
-        display: flex;
         width: 100%;
     }
 
     #profile{
-        margin-left: 25%;
-        width: 50%;
-        height: 100%;
-    }
-}
-
-@media screen and (max-width: 768px){
-    #menu{
-        height: fit-content;
-    }
-
-    #cv-1{
-        width: 100%;
-        height: fit-content;
-    }
-
-    #cv-2{
-        /* background-color: rgba(190,190,190,0.5); */
-        display: block;
-        width: 100%;
-        height: fit-content;
-    }
-
-    #profile{  
-        background-color:rgba(0, 0, 0, 0);
-        width: 50%;
         margin-left: auto;
         margin-right: auto;
-        height: fit-content;
-    }
-
-    #website{
-        background-color:rgba(0, 0, 0, 0);
-        width: 100%;
-        height: fit-content;
+        width: 50%;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 620px) {
     #profile{
         width: 80%;
     }
-}
 
-@media screen and (max-width: 387px) {
-    #profile{
+    .award{
         width: 100%;
+        padding-right: 30px;
     }
 }
 
-section{
-    background-color: rgba(190,190,190,0.5);
-}
-
-.content{
-    height: 100%;
+@media screen and (max-width: 400px) {
+    #profile{
+        width: 100%;
+    }
 }
