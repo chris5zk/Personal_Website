@@ -2,7 +2,7 @@ html, body{
     width: 100%;
     height: 100%;
 }
-
+/* nav */
 #nav{
     position: fixed;
     margin-top:0px;
@@ -11,7 +11,6 @@ html, body{
 }
 
 /* Cover */
-
 header{
     height: auto;
 }
@@ -19,7 +18,7 @@ header{
 #cover{
     padding-top: 7rem;
     padding-bottom: 7rem;
-    background-color: rgba(60, 60, 60, 0.6); 
+    background-color: rgba(76, 57, 57, 0.6); 
     background-image: url(../images/cover.jpg);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
@@ -57,15 +56,19 @@ header{
     width: 45%;
 }
 
-.award img{
+.float{
     -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
     transition: all 250ms cubic-bezier(.02, .01, .47, 1);
 }
 
-.award img:hover{
+div.myimg img.float{
+    box-shadow: rgb(155, 153, 153) 1px 1px 20px 0px;
+}
+
+.float:hover{
     cursor: pointer;
-    box-shadow: rgba(190,190,190) 3px 3px 20px 0px;
-    transform: translate(0,-5px);
+    box-shadow: rgba(190,190,190) 5px 5px 20px 0px;
+    transform: translate(-1px,-5px);
 }
 
 .award h6{
@@ -109,8 +112,16 @@ header{
 
 /* Projects & Activity */
 section{
-    height: 100%;
-    background-color: rgba(248,229,170);
+    height: auto;
+    background-color: rgb(182, 177, 160);
+}
+
+#first{
+    background: linear-gradient(rgb(129, 114, 110), rgb(182, 177, 160));
+}
+
+#last{
+    background: linear-gradient(rgb(182, 177, 160), rgb(248, 229, 170));
 }
 
 .topic{
@@ -129,12 +140,51 @@ section{
     width: auto;
     text-align: center;
     font-weight: bold;
-    font-size: 30px; 
+    font-size: 30px;
+    background-color: rgb(234, 222, 208);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: rgb(155, 153, 153) 1px 1px 20px 0px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(217, 215, 202)); */
+    background-color: rgb(217, 215, 202);
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: rgb(155, 153, 153) 1px 1px 20px 0px;
+}
+
+.myimg{
+    width: 40%;
+}
+
+.details{
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background-color: white; */
+}
+
+div.content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%; 
 }
 
 #picture{
+    height: 70%;
     background-color: rgba(248,229,170);
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/Chris.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center center;
@@ -144,6 +194,13 @@ section{
 footer{
     height: 200px;
     background-color: rgba(209, 105, 0, 0.6);
+}
+
+.contact{
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 
@@ -162,6 +219,18 @@ footer{
         margin-right: auto;
         width: 50%;
     }
+
+    .myimg{
+        width: 100%;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .details{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -173,10 +242,20 @@ footer{
         width: 100%;
         padding-right: 30px;
     }
+
+    .myimg{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
 
 @media screen and (max-width: 400px) {
     #profile{
         width: 100%;
+    }
+
+    .myimg{
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }

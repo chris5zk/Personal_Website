@@ -46,16 +46,16 @@
                         <div id="cv-1">
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
-                                  <a id="link_1" class="nav-link text-dark active" href="#">About</a>
+                                  <a id="link_1" class="nav-link text-dark active">About</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a id="link_2" class="nav-link text-light" href="#">Skill</a>
+                                  <a id="link_2" class="nav-link text-light">Skill</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a id="link_3" class="nav-link text-light" href="#">Award</a>
+                                  <a id="link_3" class="nav-link text-light">Award</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a id="link_4" class="nav-link text-light" href="#">Projects</a>
+                                  <a id="link_4" class="nav-link text-light">Projects</a>
                                 </li>
                             </ul>  
                             <div id="about" style="display: block;">
@@ -127,7 +127,7 @@
                                         <li>
                                             <h5>Dean's List Award</h5>
                                             <h6>(March 18,2020)</h6>
-                                            <img src="images/DeanList0318.jpg" alt="DeanList0318" style="max-width: 100%;">
+                                            <img class="float" src="images/DeanList0318.jpg" alt="DeanList0318" style="max-width: 100%;">
                                         </li>
                                     </ul> 
                                 </div>
@@ -141,7 +141,7 @@
                                         <li>
                                             <h5>Dean's List Award</h5>
                                             <h6>(November 16,2020)</h6>
-                                            <img src="images/DeanList1016.jpg" alt="DeanList1016" style="max-width: 100%;">
+                                            <img class="float" src="images/DeanList1016.jpg" alt="DeanList1016" style="max-width: 100%;">
                                         </li>
                                     </ul>
                                 </div>
@@ -150,7 +150,7 @@
                                         <li>
                                             <h5>CCU EE & CE Software Competition</h5>
                                             <h6>Honorable Mention<br>(November 03,2021)</h6>
-                                            <img src="images/ITSA1103.jpg" alt="ITSA" style="max-width: 100%;">
+                                            <img class="float" src="images/ITSA1103.jpg" alt="ITSA" style="max-width: 100%;">
                                         </li>
                                     </ul>
                                 </div>
@@ -164,7 +164,7 @@
                                         <li>
                                             <h5>Obstacle Detection of LRT</h5>
                                             <h6>baseed on YOLOv5 & Yolact-edged, compared with mask of both</h6>
-                                            <img id="LRT" src="images/LRTOD-static.png" alt="LRT_OD" style="max-width: 100%;">
+                                            <img class="float" id="LRT" src="images/LRTOD-static.png" alt="LRT_OD" style="max-width: 100%;">
                                         </li>
                                     </ul> 
                                 </div>
@@ -173,7 +173,7 @@
                                         <li>
                                             <h5>Claw Machine</h5>
                                             <h6>Using button to move and grab, and playing digital music with buzzer</h6>
-                                            <img id="CM" src="images/clawmachine-static.png" alt="claw_machine" style="max-width: 100%;">
+                                            <img class="float" id="CM" src="images/clawmachine-static.png" alt="claw_machine" style="max-width: 100%;">
                                         </li>
                                     </ul> 
                                 </div>
@@ -182,7 +182,7 @@
                                         <li>
                                             <h5>Lane Detection based on dynamic ROI</h5>
                                             <h6>developed on Matlab</h6>
-                                            <img src="images/Lane_Detection_night.png" alt="Lane_Detect" style="max-width: 100%;">
+                                            <img class="float" src="images/Lane_Detection_night.png" alt="Lane_Detect" style="max-width: 100%;">
                                         </li>
                                     </ul> 
                                 </div>
@@ -201,24 +201,83 @@
         <!-- Projects -->
         <!-- LRT Lane CarCrash -->
         <section>
+            <div id="first" style="height: 2rem;"></div>
             <div class="topic">
-                <div class="title" style="background-color: rgb(204, 179, 179, 0.5);">
+                <div class="title">
                     Projects<br>專題研究
+                </div>
+            </div>
+            <div class="content">
+                <div class="myimg">
+                    <img id="LRT2" class="float" src="images/LRTOD-static.png" alt="LRT_OD">
+                </div>
+                <div class="details">
+                    <h3>123</h3>
+                    <hr>
+                    <h6>456789</h6>
+                </div>
+            </div>
+            <div style="height: 5rem;"></div>
+            <div class="content">
+                <div class="myimg">
+                    <img class="float" src="images/Lane_Detection.png" alt="">
+                    <img class="float" src="images/Lane_Detection_night.png" alt="">
+                </div>
+                <div class="details">
+                    <h3>123</h3>
+                    <hr>
+                    <h6>456789</h6>
+                </div>
+            </div>
+            <div style="height: 5rem;"></div>
+            <div class="content">
+                <div class="myimg">
+                    <img class="float" src="images/CCUcarcrush.png" alt="">
+                </div>
+                <div class="details">
+                    <h3>123</h3>
+                    <hr>
+                    <h6>456789</h6>
                 </div>
             </div>
         </section>
         
         <!-- Activity -->
-        <section>
-
+        <section id="last">
+            <div style="height: 2rem;"></div>
+            <div class="topic">
+                <div class="title">
+                    Participate<br>課外活動
+                </div>
+            </div>
+            <div class="content">
+                <div class="myimg">
+                    <img class="float" src="images/LRTOD.gif" alt="">
+                </div>
+                <div class="details">
+                    123131321231313
+                </div>
+            </div>
+            <div style="height: 5rem;"></div>
+            <div class="content">
+                <div class="myimg">
+                    <img class="float" src="images/LRTOD.gif" alt="">
+                </div>
+                <div class="details">
+                    123131321231313
+                </div>
+            </div>
+            <div style="height: 2rem;"></div>
         </section>
-        
+
         <!-- background -->
         <section id="picture"></section>
-
+        
         <!-- Contact info -->
         <footer>
-            <div>123</div>
+            <div class="contact">
+                123
+            </div>
         </footer>
     </body>
 </html>
@@ -252,6 +311,15 @@
         },
         function() {
             $(this).attr('src','images/clawmachine-static.png');
+        }
+    );
+
+    $('#LRT2').hover(
+        function() {
+            $(this).attr('src','images/LRTOD.gif');
+        },
+        function() {
+            $(this).attr('src','images/LRTOD-static.png');
         }
     );
 
