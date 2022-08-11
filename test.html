@@ -1,72 +1,401 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <title>Test</title>
+        <link rel="stylesheet" href="css/test.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- <script src="https://kit.fontawesome.com/336cc36cda.js" crossorigin="anonymous"></script> -->
+        <title>Chris's Websites</title>
     </head>
-    <body>
-        <div class="container">
-            <div class="row">
-            	<div class="col-12 col-sm-6" style="background-color: red;">.col-6 .col-sm-3</div>
-              	<div class="col-6 col-sm-6" style="background-color: yellow;">.col-6 .col-sm-3</div>
-          
-				<!-- Force next columns to break to new line -->
-				<div class="w-100"></div>
-			
-				<div class="col-6 col-sm-3" style="background-color: blue;">.col-6 .col-sm-3</div>
-				<div class="col-6 col-sm-3" style="background-color: green;">.col-6 .col-sm-3</div>
+
+    <body style="background-color: black;">
+        <!-- nav -->
+        <!-- <div> -->
+            <nav id="nav" class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
+                    <span id="tag" class="navbar-brand">Chris | Personal Website</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarNav" class="collapse navbar-collapse flex-row-reverse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link item active" href="#cover">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link item" href="#research">Researchs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link item" href="#participate">Participate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link item" href="#picture">Others</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <!-- </div> -->
+
+        <!-- Introduction -->
+        <!-- <header>
+            <div id="cover" class="h-100 w-100 px-5">
+                <div class="container h-100 px-5">
+                    <div id="menu" class="row h-100">
+                        <div id="cv-1">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                  <a id="link_1" class="nav-link text-dark active pointer">About</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a id="link_2" class="nav-link text-light pointer">Skill</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a id="link_3" class="nav-link text-light pointer">Award</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a id="link_4" class="nav-link text-light pointer">Projects</a>
+                                </li>
+                            </ul>  
+                            <div id="about" style="display: block;">
+                                <div style="height: 1rem;"></div>
+                                <h4>Education</h4>
+                                <hr>
+                                <ul>
+                                    <li><h6>B.S., Department of Electrical Engineering, National Chung Cheng University, Taiwan<br>(2019/9 - Present)</h6></li>
+                                </ul>
+                                <div style="height: 1rem;"></div>
+                                <h4>Work Experience</h4>
+                                <hr>
+                                <ul>
+                                    <li><h6>College Admissions Committee - Web Developer<br>(2022/3 - Present)</h6></li>
+                                </ul>
+                                <div style="height: 1rem;"></div>
+                                <h4>Study Project</h4>
+                                <hr>
+                                <ul>
+                                    <li><h6>Lane Detection based on dynamic ROI with MATLAB</h6></li>
+                                    <li><h6>Obstacle Detection of LRT using YOLOv5 and Yolact-edged</h6></li>
+                                </ul>
+                            </div>
+                            <div id="skill" style="display: none;">
+                                <div style="height: 1rem;"></div>
+                                <h4>Web Development</h4>
+                                <hr>
+                                <ul>
+                                    <li><h6>Codeigniter 4</h6></li>
+                                    <li><h6>HTML, CSS, Javascript</h6></li>
+                                    <li><h6>JQuery</h6></li>
+                                    <li><h6>PHP</h6></li> -->
+                                    <!-- <li><h6>MySQL, SQLite</h6></li> -->
+                                <!-- </ul>
+                                <div style="height: 1rem;"></div>
+                                <h4>Machine Learning</h4>
+                                <hr>
+                                <ul>
+                                    <li><h6>Pytorch</h6></li>
+                                </ul>
+                                <div style="height: 1rem;"></div>
+                                <h4>Others</h4>
+                                <hr>
+                                <ul>
+                                    <li><h6>C</h6></li>
+                                    <li><h6>Python</h6></li>
+                                    <li><h6>MATLAB</h6></li>
+                                    <li><h6>Verilog</h6></li>
+                                    <li><h6>Assembly Language</h6></li>
+                                    <li><h6>Image Processing</h6></li>
+                                </ul>
+                                <div style="height: 1rem;"></div>
+                                <h4>Development Environment</h4>
+                                <hr>
+                                <ul>
+                                    <li><h6>Dev C++</h6></li>
+                                    <li><h6>Spyder</h6></li>
+                                    <li><h6>Pycharm</h6></li>
+                                    <li><h6>Visual Studio Code</h6></li>
+                                    <li><h6>Github/Git</h6></li>
+                                </ul>
+                            </div>
+                            <div id="award" style="display: none;">
+                                <div style="height: 1rem;"></div>
+                                <h4>Award</h4>
+                                <hr>
+                                <div class="award">
+                                    <ul>
+                                        <li>
+                                            <h5>Dean's List Award</h5>
+                                            <h6>(March 18,2020)</h6>
+                                            <img class="float" src="images/DeanList0318.jpg" alt="DeanList0318" style="max-width: 100%;">
+                                        </li>
+                                    </ul> 
+                                </div> -->
+                                <!-- <div class="show" style="background-color: rgba(0,0,0,0.5);">
+                                    <div class="show-page">
+                                        <img src="images/DeanList0318.jpg" alt="DeanList0318" style="max-width: 100%;">
+                                    </div>
+                                </div> -->
+                                <!-- <div class="award">
+                                    <ul>
+                                        <li>
+                                            <h5>Dean's List Award</h5>
+                                            <h6>(November 16,2020)</h6>
+                                            <img class="float" src="images/DeanList1016.jpg" alt="DeanList1016" style="max-width: 100%;">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="award">
+                                    <ul>
+                                        <li>
+                                            <h5>CCU EE & CE Software Competition</h5>
+                                            <h6>Honorable Mention<br>(November 03,2021)</h6>
+                                            <img class="float" src="images/ITSA1103.jpg" alt="ITSA" style="max-width: 100%;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="projects" style="display: none;">
+                                <div style="height: 1rem;"></div>
+                                <h4>Projects</h4>
+                                <hr>
+                                <div class="award">
+                                    <ul>
+                                        <li>
+                                            <h5>Obstacle Detection of LRT</h5>
+                                            <h6>baseed on YOLOv5 & Yolact-edged, compared with mask of both</h6>
+                                            <img class="float" id="LRT" src="images/LRTOD-static.png" alt="LRT_OD" style="max-width: 100%;">
+                                        </li>
+                                    </ul> 
+                                </div>
+                                <div class="award">
+                                    <ul>
+                                        <li>
+                                            <h5>Claw Machine</h5>
+                                            <h6>Using button to move and grab, and playing digital music with buzzer</h6>
+                                            <img class="float" id="CM" src="images/clawmachine-static.png" alt="claw_machine" style="max-width: 100%;">
+                                        </li>
+                                    </ul> 
+                                </div>
+                                <div class="award">
+                                    <ul>
+                                        <li>
+                                            <h5>Lane Detection based on dynamic ROI</h5>
+                                            <h6>developed on Matlab</h6>
+                                            <img class="float" src="images/Lane_Detection_night.png" alt="Lane_Detect" style="max-width: 100%;">
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cv-2">
+                            <div id="profile">
+                                <img class="rounded-circle" src="images/profile.jpg" alt="profile">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-		<div style="background-color: rgb(164, 135, 135);">
-			<div class="test" style="background-color: gray;">
-			aa
-			</div>
-			<div class="center" style="background-color: pink;">
-				<img class="img" src="images/activity.jpg" alt="123">
-			</div>
-		</div>
-	</body>
+        </header> -->
+
+        <!-- Projects -->
+        <!-- LRT Lane CarCrash -->
+        <!-- <section id="research">
+            <div id="gradient" style="height: 2rem;"></div>
+            <div style="height: 2rem;"></div>
+            <div class="topic">
+                <div class="title">
+                    Researchs<br>專題研究
+                </div>
+            </div>
+            <div class="content">
+                <div class="myimg">
+                    <img id="LRT2" class="float" src="images/LRTOD-static.png" alt="LRT_OD">
+                </div>
+                <div class="details">
+                    <h4>Obstacle Detection of Light Rail Train v1</h4>
+                    <hr>
+                    <p>
+                        <h6>
+
+                        </h6>
+                    </p>
+                </div>
+            </div>
+            <div style="height: 5rem;"></div>
+            <div class="content">
+                <div class="myimg">
+                    <img class="float" src="images/Lane_Detection.png" alt="">
+                    <img class="float" src="images/Lane_Detection_night.png" alt="">
+                </div>
+                <div class="details">
+                    <h4>Image Processing: Lane Detection based on dynamic ROI with MATLAB</h4>
+                    <hr>
+                    <p>
+                        <h6>
+                            
+                        </h6>
+                    </p>
+                </div>
+            </div>
+            <div style="height: 5rem;"></div>
+            <div class="content">
+                <div class="myimg">
+                    <img class="float" src="images/CCUcarcrush.png" alt="">
+                </div>
+                <div class="details">
+                    <h4>CCU Car Crash Community v1</h4>
+                    <hr>
+                    <p>
+                        <h6>
+
+                        </h6>
+                    </p>
+                    
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- Activity -->
+        <!-- <section id="participate">
+            <div style="height: 4rem;"></div>
+            <div class="topic">
+                <div class="title">
+                    Participate<br>課外活動
+                </div>
+            </div>
+            <div class="content">
+                <div class="myimg">
+                    <img class="float" src="images/LRTOD.gif" alt="">
+                </div>
+                <div class="details">
+                    123131321231313
+                </div>
+            </div>
+            <div style="height: 5rem;"></div>
+            <div class="content">
+                <div class="myimg">
+                    <img class="float" src="images/LRTOD.gif" alt="">
+                </div>
+                <div class="details">
+                    123131321231313
+                </div>
+            </div>
+            <div style="height: 2rem;"></div>
+        </section> -->
+
+        <!-- background -->
+        <!-- <section id="picture">
+            <div id="Chris"></div>
+        </section> -->
+        
+        <!-- Contact info -->
+        <!-- <footer>
+            <div class="contact">
+                123
+            </div>
+        </footer> -->
+    </body>
 </html>
 
-<style>
+<script>
+    setInterval(function() {
+        
+    }, 100); 
+    
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 0){
+            $('#nav').css('background-color','rgba(0, 0, 0, 0.5)');
+        }
+        else{
+            $('#nav').css('background-color','');         
+        }    
+    });
 
-html, body{
-	width: 100%;
-	height: 100%;
-}
+    $('#LRT').hover(
+        function() {
+            $(this).attr('src','images/LRTOD.gif');
+        },
+        function() {
+            $(this).attr('src','images/LRTOD-static.png');
+        }
+    );
 
-.test{
-	width: 50%;
-	padding-left: 100px;
-	padding-right: 100px;
-	margin-left: auto;
-	margin-right: auto;
-}
+    $('#CM').hover(
+        function() {
+            $(this).attr('src','images/clawmachine.gif');
+        },
+        function() {
+            $(this).attr('src','images/clawmachine-static.png');
+        }
+    );
 
-.img {
-	display: block;
-	margin: auto;
-	padding-left: 100px;
-	padding-right: 100px;
-	max-width: 100%;
-}
+    $('#LRT2').hover(
+        function() {
+            $(this).attr('src','images/LRTOD.gif');
+        },
+        function() {
+            $(this).attr('src','images/LRTOD-static.png');
+        }
+    );
 
-.center{
-	height: fit-content;
-}
+    $('#link_1').click(function(){
+        $('#about').css('display','block');
+        $('#skill').css('display','none');
+        $('#award').css('display','none');
+        $('#projects').css('display','none');
 
-@media screen and (max-width: 548px){
-	.center{
-		height: 200px;
-	}
+        $('#link_1').addClass('active text-dark');
+        $('#link_2').addClass('text-light');
+        $('#link_3').addClass('text-light');
+        $('#link_4').addClass('text-light');
+        $('#link_2').removeClass('active text-dark');
+        $('#link_3').removeClass('active text-dark');
+        $('#link_4').removeClass('active text-dark');
+    });
+    $('#link_2').click(function(){
+        $('#about').css('display','none');
+        $('#skill').css('display','block');
+        $('#award').css('display','none');
+        $('#projects').css('display','none');
 
-	.img{
-		max-width: auto;
-		height: 100%;
-	}
-}
+        $('#link_2').addClass('active text-dark');
+        $('#link_1').addClass('text-light');
+        $('#link_3').addClass('text-light');
+        $('#link_4').addClass('text-light');
+        $('#link_1').removeClass('active text-dark');
+        $('#link_3').removeClass('active text-dark');
+        $('#link_4').removeClass('active text-dark');
+    });
+    $('#link_3').click(function(){
+        $('#about').css('display','none');
+        $('#skill').css('display','none');
+        $('#award').css('display','block');
+        $('#projects').css('display','none');
 
-</style>
+        $('#link_3').addClass('active text-dark');
+        $('#link_1').addClass('text-light');
+        $('#link_2').addClass('text-light');
+        $('#link_4').addClass('text-light');
+        $('#link_1').removeClass('active text-dark');
+        $('#link_2').removeClass('active text-dark');
+        $('#link_4').removeClass('active text-dark');
+    });
+    $('#link_4').click(function(){
+        $('#about').css('display','none');
+        $('#skill').css('display','none');
+        $('#award').css('display','none');
+        $('#projects').css('display','block');
+
+        $('#link_4').addClass('active text-dark');
+        $('#link_1').addClass('text-light');
+        $('#link_2').addClass('text-light');
+        $('#link_3').addClass('text-light');
+        $('#link_1').removeClass('active text-dark');
+        $('#link_2').removeClass('active text-dark');
+        $('#link_3').removeClass('active text-dark');
+    });
+</script>

@@ -1,13 +1,41 @@
+* {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    font-family: Arial, Helvetica, sans-serif!important;
+}
+
 html, body{
     width: 100%;
     height: 100%;
 }
+
 /* nav */
 #nav{
     position: fixed;
     margin-top:0px;
+    padding-left: 100px;
+    padding-right: 100px;
     z-index: 10000;
     width: 100%;
+    height: fit-content;
+}
+
+#tag{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#tag:hover{
+    color: rgb(226, 213, 188);
+}
+
+.item{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 /* Cover */
@@ -47,6 +75,10 @@ header{
     margin-top: 10px;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 #about > h4, #skill > h4, #award > h4, #projects > h4{
     font-weight: bolder;
 }
@@ -73,9 +105,10 @@ div.myimg img.float{
 
 .award h6{
     color: rgba(210,210,210);
+    line-height: 25px;
 }
 
-.show{
+.show-page{
     position: fixed;
     width: 100%;
     height: 100%;
@@ -83,7 +116,7 @@ div.myimg img.float{
     left: 0px;
 }
 
-.show-page{
+.show-content{
     background-color: white;
     margin-top: 100px;
     margin-left: auto;
@@ -116,11 +149,11 @@ section{
     background-color: rgb(182, 177, 160);
 }
 
-#first{
+#gradient{
     background: linear-gradient(rgb(129, 114, 110), rgb(182, 177, 160));
 }
 
-#last{
+#participate{
     background: linear-gradient(rgb(182, 177, 160), rgb(248, 229, 170));
 }
 
@@ -155,7 +188,6 @@ section{
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
-    /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(217, 215, 202)); */
     background-color: rgb(217, 215, 202);
     border-radius: 30px 30px 30px 30px;
     box-shadow: rgb(155, 153, 153) 1px 1px 20px 0px;
@@ -169,9 +201,16 @@ section{
     width: 60%;
     padding-left: 30px;
     padding-right: 30px;
-    /* background-color: white; */
 }
 
+.details h4{
+    font-weight: bolder;
+    line-height: 40px;
+}
+
+.details hr{
+    height: 2px;
+}
 div.content img{
     display: block;
     margin-left: auto;
@@ -181,18 +220,34 @@ div.content img{
     max-height: 100%; 
 }
 
+/* bottom decoration */
 #picture{
-    height: 70%;
+    height: 100%;
     background-color: rgba(248,229,170);
-    background-image: url(../images/Chris.png);
-    background-repeat: no-repeat;
+    background-image: url(../images/grass.jpg);
+    background-repeat: repeat-x;
     background-size: contain;
-    background-position:center center;
+    background-position:center bottom;
+}
+
+#Chris{
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/dialogChris.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center bottom;
+}
+
+#website{
+    width: fit-content;
+    background-color: azure;
 }
 
 /* Footer */
 footer{
-    height: 200px;
+    height: 100px;
+    padding: 40px;
     background-color: rgba(209, 105, 0, 0.6);
 }
 
@@ -231,6 +286,11 @@ footer{
         margin-left: auto;
         margin-right: auto;
     }
+
+    #nav{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -244,8 +304,17 @@ footer{
     }
 
     .myimg{
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #nav{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #tag{
+        font-size: 15px;
     }
 }
 
@@ -255,7 +324,7 @@ footer{
     }
 
     .myimg{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
