@@ -9,6 +9,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/336cc36cda.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="assets/images/bone.ico" type="image/x-icon">
         <title>Chris's Websites</title>
     </head>
 
@@ -16,11 +17,11 @@
         <!-- nav -->
         <nav id="nav" class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
-                <span id="tag" class="navbar-brand">Chris | Personal Website</span>
+                <span id="tag" class="navbar-brand">CHIH-KUANG WU | Website</span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="navbarNav" class="collapse navbar-collapse flex-row-reverse" style="height: fit-content;">
+                <div id="navbarNav" class="collapse navbar-collapse flex-row-reverse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link item active" href="#cover">Menu</a>
@@ -39,168 +40,195 @@
             </div>
         </nav>
 
-        <!-- Introduction -->
+        <!-- Menu -->
         <header>
-            <div id="cover" class="h-100 w-100 px-5">
-                <div class="container h-100 px-5">
-                    <div id="menu" class="row h-100">
-                        <div id="cv-1">
-                            <ul class="nav nav-tabs">
-                                <li class="nav-item">
-                                  <a id="link_1" class="nav-link text-dark active pointer">About</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="link_2" class="nav-link text-light pointer">Skill</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="link_3" class="nav-link text-light pointer">Award</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a id="link_4" class="nav-link text-light pointer">Projects</a>
-                                </li>
-                            </ul>  
-                            <div id="about" style="display: block;">
-                                <div style="height: 1rem;"></div>
-                                <h4>Education</h4>
-                                <hr>
-                                <ul>
-                                    <li><h6>B.S., Department of Electrical Engineering, National Chung Cheng University, Taiwan<br>(2019/9 - Present)</h6></li>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="menu">
+                            <div id="cv-1">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a id="link_1" class="nav-link text-dark active pointer">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="link_2" class="nav-link text-light pointer">Skill</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="link_3" class="nav-link text-light pointer">Award</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="link_4" class="nav-link text-light pointer">Projects</a>
+                                    </li>
                                 </ul>
-                                <div style="height: 1rem;"></div>
-                                <h4>Work Experience</h4>
-                                <hr>
-                                <ul>
-                                    <li><h6>College Admissions Committee - Web Developer<br>(2022/3 - Present)</h6></li>
-                                </ul>
-                                <div style="height: 1rem;"></div>
-                                <h4>Study Project</h4>
-                                <hr>
-                                <ul>
-                                    <li><h6>Lane Detection based on dynamic ROI with MATLAB</h6></li>
-                                    <li><h6>Obstacle Detection of LRT using YOLOv5 and Yolact-edged</h6></li>
-                                </ul>
-                            </div>
-                            <div id="skill" style="display: none;">
-                                <div style="height: 1rem;"></div>
-                                <h4>Web Development</h4>
-                                <hr>
-                                <ul>
-                                    <li><h6>Codeigniter 4</h6></li>
-                                    <li><h6>HTML, CSS, Javascript</h6></li>
-                                    <li><h6>JQuery</h6></li>
-                                    <li><h6>PHP</h6></li>
-                                    <li><h6>MySQL, SQLite</h6></li>
-                                </ul>
-                                <div style="height: 1rem;"></div>
-                                <h4>Machine Learning</h4>
-                                <hr>
-                                <ul>
-                                    <li><h6>Pytorch</h6></li>
-                                </ul>
-                                <div style="height: 1rem;"></div>
-                                <h4>Others</h4>
-                                <hr>
-                                <ul>
-                                    <li><h6>C</h6></li>
-                                    <li><h6>Python</h6></li>
-                                    <li><h6>MATLAB</h6></li>
-                                    <li><h6>Verilog</h6></li>
-                                    <li><h6>Assembly Language</h6></li>
-                                    <li><h6>Image Processing</h6></li>
-                                </ul>
-                                <div style="height: 1rem;"></div>
-                                <h4>Development Environment</h4>
-                                <hr>
-                                <ul>
-                                    <li><h6>Dev C++</h6></li>
-                                    <li><h6>Spyder</h6></li>
-                                    <li><h6>Pycharm</h6></li>
-                                    <li><h6>Visual Studio Code</h6></li>
-                                    <li><h6>Github/Git</h6></li>
-                                </ul>
-                            </div>
-                            <div id="award" style="display: none;">
-                                <div style="height: 1rem;"></div>
-                                <h4>Award</h4>
-                                <hr>
-                                <div class="award">
+
+                                <!-- about -->
+                                <div id="about" style="display: block;">
+                                    <div style="height: 1rem;"></div>
+                                    <h4>Education</h4>
+                                    <hr>
                                     <ul>
-                                        <li>
-                                            <h5>Dean's List Award</h5>
-                                            <h6>(March 18,2020)</h6>
-                                            <img class="float" src="assets/images/DeanList0318.jpg" alt="DeanList0318" style="max-width: 100%;">
-                                        </li>
-                                    </ul> 
+                                        <li><h6>B.S., Department of Electrical Engineering, National Chung Cheng University, Taiwan<br>(2019/9 - Present)</h6></li>
+                                    </ul>
+                                    <div style="height: 1rem;"></div>
+                                    <h4>Work Experience</h4>
+                                    <hr>
+                                    <ul>
+                                        <li><h6>College Admissions Committee - Web Developer<br>(2021/8 - Present)</h6></li>
+                                    </ul>
+                                    <div style="height: 1rem;"></div>
+                                    <h4>Study Project</h4>
+                                    <hr>
+                                    <ul>
+                                        <li><h6>Obstacle Detection of Light Rail Train</h6></li>
+                                    </ul>
                                 </div>
-                                <!-- <div class="show" style="background-color: rgba(0,0,0,0.5);">
-                                    <div class="show-page">
-                                        <img src="images/DeanList0318.jpg" alt="DeanList0318" style="max-width: 100%;">
+
+                                <!-- skill -->
+                                <div id="skill" class="g-5">
+                                    <div style="height: 1rem;"></div>
+                                    <!-- Web Development -->
+                                    <div class="w-50 p_10">
+                                        <h4>Web Development</h4>
+                                        <hr>
+                                        <ul>
+                                            <li><h6>Codeigniter 4</h6></li>
+                                            <li><h6>HTML, CSS, Javascript</h6></li>
+                                            <li><h6>JQuery</h6></li>
+                                            <li><h6>PHP</h6></li>
+                                            <li><h6>MySQL, SQLite</h6></li>
+                                        </ul>
                                     </div>
-                                </div> -->
-                                <div class="award">
-                                    <ul>
-                                        <li>
-                                            <h5>Dean's List Award</h5>
-                                            <h6>(November 16,2020)</h6>
-                                            <img class="float" src="assets/images/DeanList1016.jpg" alt="DeanList1016" style="max-width: 100%;">
-                                        </li>
-                                    </ul>
+                                    <div style="height: 1rem;"></div>
+
+                                    <!-- Coding Skills -->
+                                    <div class="w-50 p_10">
+                                        <h4>Coding Skills</h4>
+                                        <hr>
+                                        <ul>
+                                            <li><h6>C</h6></li>
+                                            <li><h6>Python</h6></li>
+                                            <li><h6>Pytorch</h6></li>
+                                            <li><h6>MATLAB</h6></li>
+                                            <li><h6>Verilog</h6></li>
+                                            <li><h6>Assembly Language</h6></li>
+                                        </ul>
+                                    </div>
+                                    <div style="height: 1rem;"></div>
+
+                                    <!-- Other Skills -->
+                                    <div class="w-50 p_10">
+                                        <h4>Other Skills</h4>
+                                        <hr>
+                                        <ul>
+                                            <li><h6>Git</h6></li>
+                                            <li><h6>Image Processing</h6></li>
+                                        </ul>
+                                    </div>
+                                    <div style="height: 1rem;"></div>
+
+                                    <div class="w-50 p_10">
+                                        <h4>Personal Traits</h4>
+                                        <hr>
+                                        <ul>
+                                            <li><h6>Problem Solver</h6></li>
+                                            <li><h6>Hard Working</h6></li>
+                                            <li><h6>Flexible</h6></li>
+                                            <li><h6>Detail-oriented</h6></li>
+                                            <li><h6>Team player</h6></li>
+                                            <li><h6>Proactive</h6></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="award">
-                                    <ul>
-                                        <li>
-                                            <h5>CCU EE & CE Software Competition</h5>
-                                            <h6>Honorable Mention<br>(November 03,2021)</h6>
-                                            <img class="float" src="assets/images/ITSA1103.jpg" alt="ITSA" style="max-width: 100%;">
-                                        </li>
-                                    </ul>
+
+                                <!-- award -->
+                                <div id="award" style="display: none;">
+                                    <div style="height: 1rem;"></div>
+                                    <h4>Award</h4>
+                                    <hr>
+                                    <div class="award">
+                                        <ul>
+                                            <li>
+                                                <h5>Dean's List Award</h5>
+                                                <h6>(March 18,2020)</h6>
+                                                <img class="float" src="assets/images/DeanList0318.jpg" alt="DeanList0318" style="max-width: 100%;">
+                                            </li>
+                                        </ul> 
+                                    </div>
+                                    <!-- <div class="show" style="background-color: rgba(0,0,0,0.5);">
+                                        <div class="show-page">
+                                            <img src="images/DeanList0318.jpg" alt="DeanList0318" style="max-width: 100%;">
+                                        </div>
+                                    </div> -->
+                                    <div class="award">
+                                        <ul>
+                                            <li>
+                                                <h5>Dean's List Award</h5>
+                                                <h6>(November 16,2020)</h6>
+                                                <img class="float" src="assets/images/DeanList1016.jpg" alt="DeanList1016" style="max-width: 100%;">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="award">
+                                        <ul>
+                                            <li>
+                                                <h5>CCU EE & CE Software Competition</h5>
+                                                <h6>Honorable Mention<br>(November 03,2021)</h6>
+                                                <img class="float" src="assets/images/ITSA1103.jpg" alt="ITSA" style="max-width: 100%;">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- projects -->
+                                <div id="projects" style="display: none;">
+                                    <div style="height: 1rem;"></div>
+                                    <h4>Projects</h4>
+                                    <hr>
+                                    <div class="award">
+                                        <ul>
+                                            <li>
+                                                <h5>Obstacle Detection of LRT</h5>
+                                                <h6>baseed on YOLOv5 & Yolact-edged, compared with mask of both</h6>
+                                                <img class="float" id="LRT" src="assets/images/LRTOD-static.png" alt="LRT_OD" style="max-width: 100%;">
+                                            </li>
+                                        </ul> 
+                                    </div>
+                                    <div class="award">
+                                        <ul>
+                                            <li>
+                                                <h5>Claw Machine</h5>
+                                                <h6>Using button to move and grab, and playing digital music with buzzer</h6>
+                                                <img class="float" id="CM" src="assets/images/clawmachine-static.png" alt="claw_machine" style="max-width: 100%;">
+                                            </li>
+                                        </ul> 
+                                    </div>
+                                    <div class="award">
+                                        <ul>
+                                            <li>
+                                                <h5>Lane Detection based on dynamic ROI</h5>
+                                                <h6>developed on Matlab</h6>
+                                                <img class="float" src="assets/images/Lane_Detection_night.png" alt="Lane_Detect" style="max-width: 100%;">
+                                            </li>
+                                        </ul> 
+                                    </div>
+                                    <!-- <div class="award">
+                                        <ul>
+                                            <li>
+                                                <h5>CCU Car Crash Community</h5>
+                                                <h6>basic website development</h6>
+                                                <img class="float" src="assets/images/CCUcarcrush.png" alt="CCUcarcrush" style="max-width: 100%;">
+                                            </li>
+                                        </ul> 
+                                    </div> -->
                                 </div>
                             </div>
-                            <div id="projects" style="display: none;">
-                                <div style="height: 1rem;"></div>
-                                <h4>Projects</h4>
-                                <hr>
-                                <div class="award">
-                                    <ul>
-                                        <li>
-                                            <h5>Obstacle Detection of LRT</h5>
-                                            <h6>baseed on YOLOv5 & Yolact-edged, compared with mask of both</h6>
-                                            <img class="float" id="LRT" src="assets/images/LRTOD-static.png" alt="LRT_OD" style="max-width: 100%;">
-                                        </li>
-                                    </ul> 
+                            <div id="cv-2">
+                                <div id="profile"></div>
+                                <div id="self">
+                                    <h3>HI, I'm Chih-Kuang Wu !</h3>
+                                    <p>I am undergraduate student in CCUEE. I'm interesting in deep learning and computer visual.</p>
                                 </div>
-                                <div class="award">
-                                    <ul>
-                                        <li>
-                                            <h5>Claw Machine</h5>
-                                            <h6>Using button to move and grab, and playing digital music with buzzer</h6>
-                                            <img class="float" id="CM" src="assets/images/clawmachine-static.png" alt="claw_machine" style="max-width: 100%;">
-                                        </li>
-                                    </ul> 
-                                </div>
-                                <div class="award">
-                                    <ul>
-                                        <li>
-                                            <h5>Lane Detection based on dynamic ROI</h5>
-                                            <h6>developed on Matlab</h6>
-                                            <img class="float" src="assets/images/Lane_Detection_night.png" alt="Lane_Detect" style="max-width: 100%;">
-                                        </li>
-                                    </ul> 
-                                </div>
-                                <!-- <div class="award">
-                                    <ul>
-                                        <li>
-                                            <h5>CCU Car Crash Community</h5>
-                                            <h6>basic website development</h6>
-                                            <img class="float" src="assets/images/CCUcarcrush.png" alt="CCUcarcrush" style="max-width: 100%;">
-                                        </li>
-                                    </ul> 
-                                </div> -->
-                            </div>
-                        </div>
-                        <div id="cv-2">
-                            <div id="profile">
-                                <img class="rounded-circle" src="assets/images/profile.jpg" alt="profile">
                             </div>
                         </div>
                     </div>
@@ -209,7 +237,6 @@
         </header>
 
         <!-- Projects -->
-        <!-- LRT Lane CarCrash -->
         <section id="research">
             <div id="gradient" style="height: 2rem;"></div>
             <div style="height: 2rem;"></div>
@@ -266,6 +293,8 @@
             </div>
         </section>
         
+        <!-- Side Projects -->
+
         <!-- Activity -->
         <section id="participate">
             <div style="height: 4rem;"></div>
@@ -295,13 +324,13 @@
         </section>
 
         <!-- background -->
-        <section id="picture">
+        <!-- <section id="picture">
             <div id="Chris">
                 <div id="website">
                     123
                 </div>
             </div>
-        </section>
+        </section> -->
         
         <!-- Contact info -->
         <footer>
@@ -368,7 +397,7 @@
     });
     $('#link_2').click(function(){
         $('#about').css('display','none');
-        $('#skill').css('display','block');
+        $('#skill').css('display','flex');
         $('#award').css('display','none');
         $('#projects').css('display','none');
 
