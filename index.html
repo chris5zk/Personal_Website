@@ -24,7 +24,7 @@
                 <div id="navbarNav" class="collapse navbar-collapse flex-row-reverse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link item active" href="#cover">Menu</a>
+                            <a class="nav-link item active" href="#header">Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link item" href="#research">Researchs</a>
@@ -41,7 +41,7 @@
         </nav>
 
         <!-- Menu -->
-        <header>
+        <header id="header">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -85,8 +85,7 @@
                                 </div>
 
                                 <!-- skill -->
-                                <div id="skill" class="g-5">
-                                    <div style="height: 1rem;"></div>
+                                <div id="skill">
                                     <!-- Web Development -->
                                     <div class="w-50 p_10">
                                         <h4>Web Development</h4>
@@ -99,7 +98,6 @@
                                             <li><h6>MySQL, SQLite</h6></li>
                                         </ul>
                                     </div>
-                                    <div style="height: 1rem;"></div>
 
                                     <!-- Coding Skills -->
                                     <div class="w-50 p_10">
@@ -114,7 +112,6 @@
                                             <li><h6>Assembly Language</h6></li>
                                         </ul>
                                     </div>
-                                    <div style="height: 1rem;"></div>
 
                                     <!-- Other Skills -->
                                     <div class="w-50 p_10">
@@ -125,8 +122,6 @@
                                             <li><h6>Image Processing</h6></li>
                                         </ul>
                                     </div>
-                                    <div style="height: 1rem;"></div>
-
                                     <div class="w-50 p_10">
                                         <h4>Personal Traits</h4>
                                         <hr>
@@ -236,8 +231,9 @@
             </div>
         </header>
 
+        
         <!-- Projects -->
-        <section id="research">
+        <!-- <section id="research">
             <div id="gradient" style="height: 2rem;"></div>
             <div style="height: 2rem;"></div>
             <div class="topic">
@@ -291,12 +287,12 @@
                     
                 </div>
             </div>
-        </section>
+        </section> -->
         
         <!-- Side Projects -->
 
         <!-- Activity -->
-        <section id="participate">
+        <!-- <section id="participate">
             <div style="height: 4rem;"></div>
             <div class="topic">
                 <div class="title">
@@ -321,7 +317,7 @@
                 </div>
             </div>
             <div style="height: 2rem;"></div>
-        </section>
+        </section> -->
 
         <!-- background -->
         <!-- <section id="picture">
@@ -333,11 +329,11 @@
         </section> -->
         
         <!-- Contact info -->
-        <footer>
+        <!-- <footer>
             <div class="contact">
                 123
             </div>
-        </footer>
+        </footer> -->
     </body>
 </html>
 
@@ -351,6 +347,15 @@
         }
         else{
             $('#nav').css('background-color','');
+        }
+
+        if($(window).width() <= 550){
+            $('#skill div').removeClass('w-50');
+            $('#skill div').addClass('w-100');
+        }
+        else{
+            $('#skill div').removeClass('w-100');
+            $('#skill div').addClass('w-50');
         }
     }, 100); 
 

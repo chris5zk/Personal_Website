@@ -11,6 +11,7 @@ html, body{
     height: 100%;
 }
 
+/* Navbar*/
 /* nav */
 #nav{
     position: fixed;
@@ -38,7 +39,8 @@ html, body{
     margin-right: 3px;
 }
 
-/* Cover */
+/* Header */
+/* cover */
 header{
     padding-top: 6.5rem;
     padding-bottom: 7rem;
@@ -50,7 +52,7 @@ header{
     background-position:center center;
 }
 
-/* Menu frame*/
+/* menu frame*/
 #menu{
     display: flex;
     height: auto;
@@ -60,7 +62,7 @@ header{
     padding: 1.5rem;
 }
 
-/* Menu content */
+/* menu content */
 #cv-1{
     width: 60%;
     height: auto;
